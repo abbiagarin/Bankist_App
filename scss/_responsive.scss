@@ -1,0 +1,118 @@
+@include media-xl {
+  .menu-btn {
+    visibility: hidden;
+  }
+}
+
+@include media-lg {
+  header h1 {
+    font-size: 4.5rem;
+    line-height: 1.25;
+    margin-bottom: -1rem;
+  }
+
+  header h4 {
+    font-size: 2rem;
+    margin-bottom: -1.5rem;
+  }
+}
+
+@include media-md {
+  .menu-btn {
+    visibility: visible;
+  }
+
+  .nav {
+    display: block;
+  }
+
+  .nav__item {
+    border-bottom: 1px solid #ccc;
+  }
+
+  .nav__links {
+    display: block;
+    position: absolute;
+    top: 6rem;
+    left: 0;
+    width: 100%;
+    background: #f3f3f3;
+    border-bottom: 2px solid #444;
+    visibility: hidden;
+
+    &.open {
+      visibility: visible;
+    }
+  }
+
+  .nav__link--btn {
+    width: 30rem;
+    padding: 1rem 3.5rem;
+    text-align: center;
+    margin: auto;
+  }
+
+  .nav__logo {
+    margin-top: 1.5rem;
+  }
+
+  header h1 {
+    font-size: 4rem;
+    margin-bottom: -1rem;
+  }
+
+  header h4 {
+    font-size: 1.7rem;
+    margin-bottom: -1.5rem;
+  }
+}
+
+@include media-sm {
+  .header__title {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 3rem;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    padding: 7rem;
+  }
+
+  .header__img {
+    display: none;
+  }
+
+  header h1 {
+    font-size: 4.5rem;
+    line-height: 1.4;
+    margin-top: -6rem;
+  }
+
+  header h4 {
+    font-size: 1.7rem;
+  }
+
+  .btn--text {
+    font-size: 1.5rem;
+  }
+
+  .section__header {
+    font-size: 3rem;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    margin: 0 4rem;
+
+    &__feature {
+      width: 90%;
+    }
+  }
+
+  .footer__nav {
+    display: block;
+    margin-bottom: 5rem;
+  }
+}

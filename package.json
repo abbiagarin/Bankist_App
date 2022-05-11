@@ -1,0 +1,15 @@
+{
+  "name": "bankist_app",
+  "version": "1.0.0",
+  "description": "Project",
+  "default": "index.html",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Abigail",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.5.0"
+  }
+}
